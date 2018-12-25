@@ -4,7 +4,7 @@
 
 ## Install
 
-From [MELPA](https://melpa.org/)
+[Coming soon](https://github.com/melpa/melpa/pull/5882) to [MELPA](https://melpa.org/)
 
 ``` {.sourceCode .lisp}
 (use-package with-os :ensure t)
@@ -20,8 +20,14 @@ Or manually, after downloading into your `load-path`
 
 ``` {.sourceCode .lisp}
 (with-os
-  :darwin (message "Hello from Mac")
-  :linux (message "Hello from GNU/Linux))
+  :darwin
+  (message "Hello from Mac")
+  (message "Multiple sexps are accepted")
+  :linux
+  (message "Hello from GNU/Linux)
+  (message "Free as in freedom, baby")
+  :windows-nt
+  (message "I'm sorry for your loss"))
 ```
 
 ## License
